@@ -1,0 +1,147 @@
+/************ Custom Fonts ***********/
+@font-face {
+    font-family: 'Montserrat-ExtraBold';
+    src: url(fonts/Montserrat/static/Montserrat-ExtraBold.ttf);
+}
+@font-face {
+	font-family: 'Lato-Light';
+	src: url(fonts/Lato/Lato-Light.ttf);
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url(fonts/Lato/Lato-Regular.ttf);
+}
+
+
+/********** CSS Variables *******/
+:root {
+    --crimson: crimson;
+    --aquamarine: aquamarine;
+  }
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-size: 20px;
+    user-select: none;
+}
+
+/************ Header Section *************/
+#header {
+    display: flex;
+    /* border: 2px solid red; */
+    width: auto;
+    height: 25%;
+    font-family: 'Montserrat-ExtraBold';
+    justify-content: center;
+    background-color:gainsboro
+}
+
+#header h1 {
+    /* border: 2px solid blue; */
+    align-content: center;
+    font-size: 5rem;
+}
+
+#first-letter {
+    color:teal;
+}
+
+#stopwatch-icon {
+    color: var(--crimson);
+    animation-name: move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes move {
+    from {translate: 0px -7px}
+    to {translate: 0px 7px}
+}
+
+
+/*************** Container Section ****************/
+.container {
+    display: flex;
+    height: 75%;
+    background-color:lightsteelblue;
+    flex-direction:column;
+    flex-wrap:wrap;
+    align-items: center;
+}
+
+#timer-div{
+    padding: 0.5em;
+    font-size: 4em;
+    font-family: 'Montserrat-ExtraBold';
+    border-radius: 20px;
+    height: 15%;
+    width: 30%;
+    text-align: center;
+    margin: auto;
+    color: black;
+    background-color:azure;
+    box-shadow: 1px 1px 20px 8px black;
+}
+
+.buttons {
+    display: flex;
+    padding-bottom: 5%;
+    width: 30em;
+    justify-content: space-around;
+}
+
+.buttons .btn {
+    background: rgb(228, 79, 109);
+    color: white;
+    font-family: "Lato";
+    padding: 15px 30px;
+    border: 5px solid transparent;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 1px 1px 20px 8px white;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.buttons .btn:hover {
+    background:rgb(1, 164, 164);
+    box-shadow: 1px 1px 20px 8px black;
+}
+
+
+#timingList {
+ display: none;
+ list-style: none;
+ flex-direction: row;
+ /* border: 3px solid black; */
+ list-style-position: inside;
+ padding: 10px;
+ margin-bottom: 30px;
+ background-color: rgba(0,0,0,0.4);
+ border-radius: 15px;
+}
+
+#timingList li {
+   background-color: aqua;
+   border-radius: 15px;
+   margin: auto 50px;
+   font-family: "Lato";
+   font-weight: bold;
+   color: black;
+   padding: 10px;
+}
+
+
+
+
+
+
+
