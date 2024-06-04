@@ -53,10 +53,7 @@ body{
 
 #stopwatch-icon {
     color: var(--crimson);
-    animation-name: move;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    animation: move 2s linear infinite alternate;
 }
 
 @keyframes move {

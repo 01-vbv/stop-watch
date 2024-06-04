@@ -56,6 +56,7 @@ resetBtnEle.addEventListener("click", () => {
   secondEle.textContent = `00`;
   timings = [];
   timingListEle.style.display = "none";
+  timingListEle.textContent = "";
 });
 
 // ############### setInterval for starting clock ###########
