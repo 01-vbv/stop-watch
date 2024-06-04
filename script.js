@@ -54,6 +54,8 @@ resetBtnEle.addEventListener("click", () => {
   minute = 0;
   minuteEle.textContent = `00`;
   secondEle.textContent = `00`;
+  timings = [];
+  timingListEle.style.display = "none";
 });
 
 // ############### setInterval for starting clock ###########
@@ -97,5 +99,4 @@ function updateTimingList(time) {
     });
     timingListEle.lastElementChild.style.backgroundColor = "orange";
   }
-  // console.log(timings);
 }
